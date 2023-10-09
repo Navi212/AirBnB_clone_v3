@@ -1,0 +1,22 @@
+#!/usr/bin/python3
+from sys import argv
+
+objs = {"user.id22": [{"name": "j", "age": 30}],
+       "state.id8": [{"name": "ca", "age": 90}],
+       "state.i28": [{"name": "ca", "age": 90}],
+       "state.id4": [{"name": "ca", "age": 90}],
+       "state.id89": [{"name": "ca", "age": 90}]
+       }
+def ok():
+    count = 0
+    for k in objs:
+        a = k.replace(".", " ")
+        key = a.split()[0]
+        #if (argv[1] is None):
+        return (len(objs))
+        #if (key == argv[1]):
+        #    count += 1
+    #return (count)
+
+p = ok()
+print(p)
