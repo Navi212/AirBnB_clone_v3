@@ -69,9 +69,9 @@ def create_review(place_id):
                  methods=["PUT"], strict_slashes=False)
 def update_review_id(review_id):
     """Updates review by id"""
-    review = storage.get("Review", review_id):
-        if not review:
-            abort(404)
+    review = storage.get("Review", review_id)
+    if not review:
+        abort(404)
     payload = request.get_json()
     if not payload:
         abort(400, "Not a JSON")
